@@ -57,3 +57,15 @@ Click "Open" to open the project.
 ## Set Up Maven Dependencies
 This project uses Maven for dependency management. Make sure you have Maven installed on your system. 
 If not, you can download it from Maven's official website. https://mvnrepository.com/
+
+# Static imports
+In order to use REST assured effectively it's recommended to statically import methods from the following classes:
+
+io.restassured.RestAssured.*
+io.restassured.matcher.RestAssuredMatchers.*
+org.hamcrest.Matchers.*
+
+If you want to use Json Schema validation you should also statically import these methods:
+
+io.restassured.module.jsv.JsonSchemaValidator.*
+
