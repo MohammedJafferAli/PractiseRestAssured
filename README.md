@@ -11,12 +11,22 @@ The RestAssured API Testing Framework is a comprehensive solution for automating
 5. Integration with Maven for seamless dependency management and project build.
 
 # Tools used: 
-Java
-REST-Assured
-TestNG
-Cucumber
-Maven
-IntelliJ IDEA /Eclipse (choice) 
+1. Java
+2. REST-Assured
+3. TestNG
+4. Cucumber
+5. Maven
+6. IntelliJ IDEA /Eclipse (choice)
+
+## Dependencies:
+1. Rest Assured
+2. json-path
+3. json
+4. gson
+5. Testng
+6. scribejava-api (3rd party api to generate dynamic data for testing)
+7. json-schema-validator
+8. xml-schema-validator
 
 
 ## Getting Started
@@ -35,7 +45,7 @@ Follow these step-by-step instructions to fork the repository and set up the pro
 1. Open your terminal or command prompt.
 2. Use the following command to clone the repository to your local machine:
 
-   ```bash
+   Git bash
    git clone https://github.com/your-username/your-repo-name.git
 
 # Open the Project in IntelliJ IDEA
