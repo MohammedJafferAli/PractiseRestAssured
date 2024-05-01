@@ -55,9 +55,8 @@ public class HTTPRequests {
                 .body(data)
 
                 .when()
-                    .post("https://reqres.in/api/users")
-                    .jsonPath().getInt("id");
-
+                .post("https://reqres.in/api/users")
+                .jsonPath().getInt("id");
 
         System.out.println("User created successfully -  ID: " + id);
 
@@ -66,29 +65,40 @@ public class HTTPRequests {
 */
     }
 
-
     @Test(priority = 3, dependsOnMethods = {"createUser"})
-    void updateUser()
-    {
+    void updateUser() {
         HashMap data = new HashMap();
         data.put("name", "Jaffer");
         data.put("job", "QA Lead");
 
-        System.out.println("Updating user details with new data "+data);
+        System.out.println("Updating user details with new data " + data);
+        System.out.println("ID copied from create user request " + id);
 
         given()
                 .contentType("application/json")
                 .body(data)
 
                 .when()
-                    .put("https://reqres.in/api/users"+id)
+                .put("https://reqres.in/api/users/" + id)
 
                 .then()
-                    .statusCode(200)
-                    .log().all();
-
-
+                .statusCode(200)
+                .log().all();
 
     }
+
+    @Test(priority = 4)
+    void deleteUser() {
+        given()
+
+                .when()
+                .delete("https://reqres.in/api/users" + id)
+
+                .then()
+                .statusCode(204)
+                .log().all();
+
+    }
+
 
 }

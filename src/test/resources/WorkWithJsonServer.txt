@@ -1,0 +1,34 @@
+
+What is json server and the purpose?
+
+JSON server allows you to quickly setup RESTful API server quickly in local without a need of database.
+mock the server and mimic as a real server, but actually not.
+
+purposes of JSON Server:
+
+1. Mocking Data: JSON Server allows you to create a fake REST API with CRUD (Create, Read, Update, Delete) operations based on a JSON file.
+This is useful for testing client-side applications without needing a real server.
+2. Rapid Prototyping: It enables developers to quickly prototype and develop front-end applications by providing a simple and lightweight server that serves static JSON data.
+3. No Database Required: Since JSON Server uses JSON files as its data source, there's no need to set up and manage a database during development.
+4. Dynamic Responses: JSON Server supports dynamic responses, allowing you to define custom routes, filters, and pagination directly in the JSON file.
+5. Easy Setup: JSON Server is easy to install and set up, making it accessible even for beginners. It's a single command-line tool that can be installed via npm.
+6. Interoperability: JSON Server works well with various front-end frameworks and libraries, such as React, Angular, Vue.js, etc.,
+making it a versatile tool for web development.
+
+
+How to setup json-server :
+
+1. First, make sure you have Node.js installed on your machine. You can download and install Node.js "node --version"
+2. Once Node.js is installed, open your terminal (Zsh) and install the json-server package globally using npm (Node Package Manager).
+Run the following command:
+"npm install -g json-server" - Windows
+sudo npm install -g json-server - mac
+3. After installing json-server, navigate to the directory where your JSON file is located using the cd command. For example:
+cd path/to/your/json/files
+
+4. run the server - "json-server --watch filename.json"
+5. The JSON server will start, and it will provide you with a RESTful API based on your JSON file.
+6. You can now access your JSON data through the RESTful API endpoints provided by the JSON server.
+For example, if your JSON file contains a list of students,
+
+### you can access them at http://localhost:3000/students. ###
