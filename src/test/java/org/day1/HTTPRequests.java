@@ -20,7 +20,6 @@ import static org.hamcrest.Matchers.*;
  *   .then()
  *
  * */
-
 // Practise URL for rest api testing  - https://reqres.in/
 
 public class HTTPRequests {
@@ -42,7 +41,6 @@ public class HTTPRequests {
                 .log().all();
 
     }
-
 
     @Test(priority = 2)
     void createUser() {
