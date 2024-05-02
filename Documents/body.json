@@ -1,0 +1,9 @@
+{
+"name": "Smith",
+"location": "Los Angeles",
+"phone": "567-8901",
+"courses": [
+"Biology",
+"Chemistry"
+]
+}

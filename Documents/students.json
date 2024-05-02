@@ -1,18 +1,8 @@
 {
   "students": [
     {
-      "name": "John Doe",
-      "id": "S001",
-      "location": "New York",
-      "phone": "+1 (123) 456-7890",
-      "courses": [
-        "Mathematics",
-        "Physics"
-      ]
-    },
-    {
+      "id": "1",
       "name": "Alice Smith",
-      "id": "S002",
       "location": "Los Angeles",
       "phone": "+1 (234) 567-8901",
       "courses": [
@@ -21,8 +11,8 @@
       ]
     },
     {
+      "id": "2",
       "name": "Michael Johnson",
-      "id": "S003",
       "location": "Chicago",
       "phone": "+1 (345) 678-9012",
       "courses": [
@@ -31,34 +21,14 @@
       ]
     },
     {
-      "name": "Emily Brown",
-      "id": "S004",
-      "location": "Houston",
-      "phone": "+1 (456) 789-0123",
+      "id": "24b9",
       "courses": [
-        "Computer Science",
-        "English"
-      ]
-    },
-    {
-      "id": "ea9b",
-      "courses": [
-        "Java",
-        "Selenium"
+        "Biology",
+        "Chemistry"
       ],
-      "phone": "1234567",
-      "name": "Eric",
-      "location": "Canada"
-    },
-    {
-      "id": "21d4",
-      "courses": [
-        "Java",
-        "Selenium"
-      ],
-      "phone": "1234567",
-      "name": "Rutten",
-      "location": "US"
+      "phone": "567-8901",
+      "name": "Smith",
+      "location": "Los Angeles"
     }
   ]
 }
