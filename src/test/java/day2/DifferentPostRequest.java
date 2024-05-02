@@ -27,7 +27,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class DifferentPostRequest {
 
-    //@Test(priority = 1)
+    @Test(priority = 1)
     void testJSONPostRequest() {
         JSONObject data = new JSONObject(); //Create JSON Object
         data.put("name", "Eric");
@@ -56,7 +56,7 @@ public class DifferentPostRequest {
                 .log().all();
     }
 
-    //@Test(priority = 2)
+    @Test(priority = 2)
     void testPOJOPostRequest() {
 
         POJOJsonData data = new POJOJsonData();
