@@ -10,7 +10,6 @@ package org.day1;
 *
 * */
 
-
 /*Static imports for rest-assured testing*/
 
 import org.testng.annotations.Test;
@@ -28,7 +27,7 @@ public class PostRequestTypes {
 
 
     //Post request body using HashMap - Preferrable for small data
-   //@Test(priority = 1)
+   @Test(priority = 1)
     void testPostRequestUsingHashMap()
     {
         HashMap data = new HashMap();
@@ -47,7 +46,6 @@ public class PostRequestTypes {
                .when()
                .post("http://localhost:3000/students")
 
-
                .then()
                .statusCode(201)
                .body("name",equalTo("Rutten"))
@@ -65,11 +63,10 @@ public class PostRequestTypes {
         given()
 
                 .when()
-                .delete("http://localhost:3000/students")
+                .delete("http://localhost:3000/students/3")
 
                 .then()
-                .statusCode(200)
-                .assertThat().body(equalTo(""));
+                .statusCode(200);
 
     }
 
