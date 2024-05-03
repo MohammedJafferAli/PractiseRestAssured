@@ -1,4 +1,4 @@
-package day2;
+package org.day2;
 
 /*There are 4 different ways to send the body in the POST request, there are
  *
@@ -18,11 +18,9 @@ import org.testng.annotations.Test;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.util.HashMap;
 
 import static io.restassured.RestAssured.*;
 
-import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.equalTo;
 
 public class DifferentPostRequest {

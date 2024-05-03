@@ -1,4 +1,4 @@
-package day2;
+package org.day2;
 
 public class POJOJsonData {
 
