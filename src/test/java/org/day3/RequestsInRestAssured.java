@@ -38,7 +38,7 @@ public class RequestsInRestAssured {
 
                 .then()
                 .statusCode(200)
-                .log().all();
+                .log().all();//All represent - to print everything received from response includes header, cookies, status code, meta-data and response body.
 
     }
 
@@ -57,7 +57,7 @@ public class RequestsInRestAssured {
     @Test(priority = 3)
     void testCookiesWithVar() {
 
-        Response response = given()
+        Response response = given() //Saving the whole response into the Response type variable, so it can be used for other validation
 
                 .when()
                 .get("https://www.google.com/");
@@ -69,10 +69,10 @@ public class RequestsInRestAssured {
         //Get multiple cookies value in Key and Value pair
         Map<String, String> cookie_values = response.getCookies();
 
-        //System.out.println(cookie_value.keySet());
+        //System.out.println(cookie_value.keySet()); //Print only the keys as a set
         for (String key : cookie_values.keySet())//Extract only the key
         {
-            String cookie_value = response.getCookie(key);
+            String cookie_value = response.getCookie(key); //get the value of  each cookies by passing the key
             System.out.println("Key " + key + "  " + cookie_value);
         }
 
